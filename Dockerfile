@@ -3,6 +3,7 @@ FROM python:3
 WORKDIR /idarling
 
 RUN apt install -y git && \
+    pip install PyQt5 && \
     git clone https://github.com/fidgetingbits/IDArling .
 
 EXPOSE 31013
